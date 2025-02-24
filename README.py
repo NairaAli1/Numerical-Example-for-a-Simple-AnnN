@@ -1,4 +1,3 @@
-# Numerical-Example-for-a-Simple-AnnN
 import numpy as np
 
 # دالة  السيجمويد
@@ -22,18 +21,16 @@ input_values = np.array([0.1, 0.2, 1])  #  bias2 غير قيمه bias1  لان �
 
 target_values = np.array([0.1, 0.99])
 
-# الأوزان والقيم المستخدمة في المسئله
+# الأوزان والقيم في المسئله
 weights = {
     "weights_input_hidden": np.array([[0.15, 0.2, 0.35],
                                        [0.25, 0.3, 0.35]]),
     "weights_hidden_output": np.array([[0.4, 0.45],
-                                         [0.5, 0.55]])
-}
+                                         [0.5, 0.55]]) }
 
 biases = {
     "bias_hidden": np.array([0.35, 0.35]),
-    "bias_output": np.array([0.6, 0.6])
-}
+          "bias_output": np.array([0.6, 0.6]) }
 
 hidden_layer_output, the_final_output = forward_pass(input_values, weights, biases)
 
